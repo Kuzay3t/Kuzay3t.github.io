@@ -3,10 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glory Bagai</title>
-
-<!-- Google Font similar to academic pages -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Glory Bagai - Academic Portfolio</title>
 
 <style>
 * {
@@ -16,93 +13,118 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f3f4f6;
-    color: #111;
-    line-height: 1.6;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.7;
+}
+
+nav {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 22px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #000;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 100px auto;
-    padding: 0 40px;
-}
-
-.hero {
+    max-width: 1300px;
+    margin: 70px auto;
+    padding: 0 50px;
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 70px;
 }
 
-.hero img {
+.content {
     width: 100%;
-    border-radius: 6px;
 }
 
 h1 {
     font-size: 44px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.intro {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-.social {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.social a {
-    text-decoration: none;
+    font-weight: normal;
+    margin-bottom: 35px;
     color: #000;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.social a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-top: 80px;
 }
 
 h2 {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+a {
+    color: #7a3e1d;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+}
+
+.social-links {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 45px;
+}
+
+.social-links a {
+    font-size: 15px;
+}
+
+.profile-image {
+    position: sticky;
+    top: 120px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
 }
 
 .news-item {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 20px;
-    margin-bottom: 20px;
-    font-size: 17px;
+    margin-bottom: 14px;
+    font-size: 16px;
 }
 
-.date {
-    color: #555;
-}
-
-@media (max-width: 900px) {
-    .hero {
+@media (max-width: 1000px) {
+    .container {
         grid-template-columns: 1fr;
-        text-align: center;
     }
 
-    .social {
-        justify-content: center;
+    .profile-image {
+        position: relative;
+        margin-top: 30px;
     }
 
-    .news-item {
-        grid-template-columns: 1fr;
+    .profile-image img {
+        max-width: 280px;
     }
 }
 </style>
@@ -110,75 +132,77 @@ h2 {
 
 <body>
 
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Publications</a></li>
+<li><a href="#">News</a></li>
+</ul>
+</nav>
+
 <div class="container">
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <img src="profile.jpg" alt="Glory Bagai">
+<div class="content">
 
-        <div>
-            <h1>Glory Bagai</h1>
+<h1>Glory Bagai</h1>
 
-            <p class="intro">
-                I am a Mechatronics Engineering undergraduate at the Federal University of Technology, Minna.
-                My research focuses on resource-efficient learning and control of autonomous systems.
-                I am interested in designing intelligent systems that adapt robustly under computational
-                and energy constraints, integrating machine learning, model compression,
-                and embedded AI techniques.
-            </p>
+<div class="social-links">
+<a href="mailto:bagaiglory@gmail.com">Email</a>
+<a href="CV_LINK">CV</a>
+<a href="https://github.com/Kuzay3t">GitHub</a>
+<a href="https://www.linkedin.com/in/glory-bagai">LinkedIn</a>
+</div>
 
-            <div class="social">
-                <a href="mailto:bagaiglory@gmail.com">Email</a>
-                <a href="https://github.com/Kuzay3t" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/glory-bagai" target="_blank">LinkedIn</a>
-                <a href="https://drive.google.com/yourcv" target="_blank">CV</a>
-                <a href="https://medium.com/@bagaiglory" target="_blank">Blog</a>
-            </div>
-        </div>
-    </div>
+<p>
+I am a penultimate-year Mechatronics Engineering undergraduate at the 
+<a href="https://www.futminna.edu.ng/">Federal University of Technology, Minna</a>. 
+I am an independent researcher with 
+<a href="https://mlcollective.org/">ML Collective</a> and previously a participant in the 
+<a href="https://amanlab.mit.edu/reneu">Research Experience for Nigerian Undergraduates (RENEU)</a> program.
+</p>
 
-    <!-- News Section -->
-    <section>
-        <h2>News</h2>
+<p>
+Previously, I worked as a Research Assistant in the 
+<a href="https://jossou.mit.edu/team/">Jossou Research Group</a> at 
+<a href="https://www.mit.edu/">MIT – Massachusetts Institute of Technology</a>, 
+mentored by <a href="https://www.linkedin.com/in/donghun-ryu/">DongHun Ryu</a>. 
+I also presented research at 
+<a href="https://aibootcamp.dsn.ai/">DSN AI Bootcamp 2025 – Data Science Nigeria</a>.
+</p>
 
-        <div class="news-item">
-            <div class="date">Feb 2026</div>
-            <div>My work was featured as part of the Millennium Fellowship program.</div>
-        </div>
+<p>
+In 2026, I will join the 
+<a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> 
+as a Research Intern, working on structured fine-tuning methods under 
+<a href="https://jonasgeiping.github.io/">Jonas Geiping</a> and 
+Antonio Orvieto.
+</p>
 
-        <div class="news-item">
-            <div class="date">Jan 2026</div>
-            <div>Research Intern at the Max Planck Institute for Intelligent Systems working on Structured Fine-Tuning for LLMs.</div>
-        </div>
+<p>
+My research focuses on the design, control, and learning of autonomous systems under resource constraints. 
+I investigate parameter-efficient fine-tuning, model compression, knowledge distillation, 
+and embedded machine learning to enable compute- and energy-efficient intelligent systems.
+</p>
 
-        <div class="news-item">
-            <div class="date">Oct 2025</div>
-            <div>Presented research on Resource-Efficient Deep Learning Architectures at DSN AI Bootcamp 2025.</div>
-        </div>
+<h2>News</h2>
 
-        <div class="news-item">
-            <div class="date">Sep 2025</div>
-            <div>Oral presentation at RENEU Symposium on BCDI reconstruction using efficient deep architectures.</div>
-        </div>
+<div class="news-item">
+February 2026 — Featured as part of the Millennium Fellowship program.
+</div>
 
-    </section>
+<div class="news-item">
+January 2026 — Research Internship at Max Planck Institute for Intelligent Systems.
+</div>
 
-    <!-- Research Interests -->
-    <section>
-        <h2>Research Interests</h2>
-        <p>
-            Resource-efficient deep learning, embedded AI systems, model compression,
-            knowledge distillation, adaptive control, and scalable learning for autonomous systems.
-        </p>
-    </section>
+<div class="news-item">
+October 2025 — Presented research at DSN AI Bootcamp 2025.
+</div>
 
-    <!-- Education -->
-    <section>
-        <h2>Education</h2>
-        <p>
-            Federal University of Technology, Minna — B.Eng. Mechatronics Engineering (Expected 2027)
-        </p>
-    </section>
+</div>
+
+<div class="profile-image">
+<img src="profile.jpg" alt="Glory Bagai">
+</div>
 
 </div>
 
