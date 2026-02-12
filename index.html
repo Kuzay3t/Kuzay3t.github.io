@@ -9,97 +9,256 @@
     <meta name="keywords" content="Glory Bagai, Mechatronics Engineering, Robotics, Artificial Intelligence, Machine Learning, Autonomous Systems, Embedded AI, Resource Efficient AI">
     
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #FFFDD0; /* Cream color */
-            color: #000000; /* Black text */
-            max-width: 900px;
-            margin: 40px auto;
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #ffffff;
+            color: #333;
             line-height: 1.6;
-            padding: 0 20px;
         }
-        h1, h2 {
-            color: #000000; /* Also black for headings */
+
+        /* Navigation bar at the top */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        a {
-            color: #0056b3;
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 60px;
+            gap: 40px;
+        }
+
+        nav a {
             text-decoration: none;
+            color: #666;
+            font-size: 18px;
+            transition: color 0.3s;
         }
-        a:hover {
+
+        nav a:hover {
+            color: #000;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 60px;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 80px;
+            align-items: start;
+        }
+
+        /* Content section */
+        .content {
+            padding-right: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 35px;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        /* Social links below name */
+        .social-links {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #8B4513;
+            text-decoration: underline;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #A0522D;
+        }
+
+        /* Paragraphs with justified text */
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #333;
+        }
+
+        a {
+            color: #8B4513;
             text-decoration: underline;
         }
-        .section {
-            margin-bottom: 40px;
+
+        a:hover {
+            color: #A0522D;
         }
+
+        /* Profile image section */
+        .profile-image {
+            position: sticky;
+            top: 120px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
         .news-item {
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 40px;
+            }
+
+            .profile-image {
+                position: relative;
+                top: 0;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+                margin: 40px auto;
+            }
+
+            nav ul {
+                padding: 0 20px;
+                gap: 20px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .social-links {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- Top Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
 
-<h1>Glory Bagai</h1>
-<p><strong>Mechatronics Engineering | Robotics & AI Researcher</strong></p>
-<p>Nigeria</p>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <h1>Glory Bagai</h1>
+            
+            <!-- Social Links (moved to top like Ileri's) -->
+            <div class="social-links">
+                <a href="mailto:bagaiglory@gmail.com">Email</a>
+                <a href="https://drive.google.com/file/d/1pRoXIr3tHdd2HwDP4F8VsWcaA3103xcv/view?usp=sharing" target="_blank">CV</a>
+                <a href="https://github.com/Kuzay3t" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/glory-bagai" target="_blank">LinkedIn</a>
+                <a href="https://medium.com/@bagaiglory" target="_blank">Medium</a>
+                <a href="https://calendly.com/bagaiglory/30min" target="_blank">Book a Meeting</a>
+            </div>
 
-<div class="section">
-    <h2>About Me</h2>
-    <p>
-        Hi! I'm Glory, a penultimate-year (4th-year) Mechatronics Engineering undergraduate student at the Federal University of Technology, Minna. 
-        I’m also an independent researcher with ML Collective and a Research Intern at the IEEE Skill-Up Technology Hub at the University of Chichester. 
-        Previously, I worked as a Research Assistant in the Jossou Research Group at the Massachusetts Institute of Technology (MIT), mentored by DongHun Ryu and supervised by Erricmore Jossou.
-        My research focuses on the design, control, and learning of autonomous systems under resource constraints. 
-        I aim to create intelligent systems that can adapt their behavior efficiently in complex, dynamic environments by integrating methods from machine learning, deep learning, and adaptive control. 
-        Specifically, I explore techniques such as parameter-efficient fine-tuning, model compression, knowledge distillation, and embedded machine learning to enable compute- and energy-efficient scaling of autonomous systems.
-    </p>
-</div>
+            <!-- About Section -->
+            <p>
+                Hi! I'm Glory, a penultimate-year (4th-year) Mechatronics Engineering undergraduate student at the Federal University of Technology, Minna. I'm also an independent researcher with ML Collective and a Research Intern at the IEEE Skill-Up Technology Hub at the University of Chichester. Previously, I worked as a Research Assistant in the Jossou Research Group at the Massachusetts Institute of Technology (MIT), mentored by DongHun Ryu and supervised by Erricmore Jossou.
+            </p>
 
-<div class="section">
-    <h2>Presentations</h2>
-    <p>
-        Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging – Oral Presentation, RENEU Symposium (September 2025)
-    </p>
-    <p>
-        Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging – Poster Presentation, DSN AI Bootcamp 2025 (October 2025)
-    </p>
-</div>
+            <p>
+                My research focuses on the design, control, and learning of autonomous systems under resource constraints. I aim to create intelligent systems that can adapt their behavior efficiently in complex, dynamic environments by integrating methods from machine learning, deep learning, and adaptive control. Specifically, I explore techniques such as parameter-efficient fine-tuning, model compression, knowledge distillation, and embedded machine learning to enable compute- and energy-efficient scaling of autonomous systems.
+            </p>
 
-<div class="section">
-    <h2>News & Achievements</h2>
-    <div class="news-item">February 2026 – My work was featured as part of the Millennium Fellowship program.</div>
-    <div class="news-item">January 2026 – I will be spending the summer as a Research Intern at the Max Planck Institute for Intelligent Systems working on the project "Structured Fine-Tuning for LLMs" under Joana Silwa, Antonio Orvieto, and Jonas Geiping.</div>
-    <div class="news-item">January 2026 – Won the Dr. Olumide Phillips Scholarship; 5 undergraduate students were selected in the whole of Nigeria.</div>
-    <div class="news-item">January 2026 – Delivered a talk on "Balancing Academics and a Thriving Tech Career" at the AMTES (FUNAAB) Freshers Orientation.</div>
-    <div class="news-item">December 2025 – Appointed Pioneer IEEE Women in Engineering Vice-Chair for FUTMINNA Student Branch.</div>
-    <div class="news-item">December 2025 – Became a 7x Hackathon winner – finalist in Fail Forward Hackathon presenting Agrilingua; 1st Place in DataHer Africa Hackathon; Best Technical Implementation in Loveable Hackathon.</div>
-    <div class="news-item">October 2025 – Presented research on Resource-Efficient Deep Learning Architectures for BCDI as a poster at DSN AI Bootcamp 2025.</div>
-    <div class="news-item">October 2025 – Selected as one of 150 participants out of 32,000+ applicants for DSN AI Bootcamp 2025.</div>
-    <div class="news-item">October 2025 – Always in need of compute for research projects; contributions welcome.</div>
-    <div class="news-item">January 2026 – Invited as a guest speaker to 100-level freshers on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group, FUTMINNA.</div>
-    <div class="news-item">January 2026 – Invited as a guest speaker to 300-level students of the School of Electrical Engineering Technology, FUNAAB.</div>
-    <div class="news-item">January 2026 – Officially a Millennium Fellowship Alumna.</div>
-    <div class="news-item">November 2024 – Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
-    <div class="news-item">September 2025 – Presented final RENEU research on BCDI at RENEU Annual Symposium.</div>
-    <div class="news-item">August 2025 – Led first campus-wide MATLAB Competition in Nigeria; 70+ participants from over 10 departments.</div>
-    <div class="news-item">August 2025 – Selected as a Millennium Fellow out of 60,000+ applicants worldwide; engaged in Global Goals Classroom mentoring 100+ high school students aged 10–17.</div>
-    <div class="news-item">June 2025 – Selected as one of 6 undergraduates for RENEU Cohort 3 to collaborate with MIT researchers.</div>
-    <div class="news-item">January 2025 – Delivered a talk on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group Freshers Orientation.</div>
-    <div class="news-item">September 2025 – Joined Technovation Global as Student Ambassador and Mentor.</div>
-</div>
+            <!-- Presentations Section -->
+            <h2>Presentations</h2>
+            <p>
+                Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging – Oral Presentation, RENEU Symposium (September 2025)
+            </p>
+            <p>
+                Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging – Poster Presentation, DSN AI Bootcamp 2025 (October 2025)
+            </p>
 
-<div class="section">
-    <h2>Links</h2>
-    <p>
-        <a href="https://github.com/Kuzay3t" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/glory-bagai" target="_blank">LinkedIn</a> |
-        <a href="https://medium.com/@bagaiglory" target="_blank">Medium</a> |
-        <a href="mailto:bagaiglory@gmail.com">Email</a> |
-        <a href="https://calendly.com/bagaiglory/30min" target="_blank">Book a Meeting</a> |
-        <a href="https://drive.google.com/file/d/1pRoXIr3tHdd2HwDP4F8VsWcaA3103xcv/view?usp=sharing" target="_blank">CV</a>
-    </p>
-</div>
+            <!-- News & Achievements Section -->
+            <h2>News & Achievements</h2>
+            <div class="news-item">February 2026 – My work was featured as part of the Millennium Fellowship program.</div>
+            <div class="news-item">January 2026 – I will be spending the summer as a Research Intern at the Max Planck Institute for Intelligent Systems working on the project "Structured Fine-Tuning for LLMs" under Joana Silwa, Antonio Orvieto, and Jonas Geiping.</div>
+            <div class="news-item">January 2026 – Won the Dr. Olumide Phillips Scholarship; 5 undergraduate students were selected in the whole of Nigeria.</div>
+            <div class="news-item">January 2026 – Delivered a talk on "Balancing Academics and a Thriving Tech Career" at the AMTES (FUNAAB) Freshers Orientation.</div>
+            <div class="news-item">December 2025 – Appointed Pioneer IEEE Women in Engineering Vice-Chair for FUTMINNA Student Branch.</div>
+            <div class="news-item">December 2025 – Became a 7x Hackathon winner – finalist in Fail Forward Hackathon presenting Agrilingua; 1st Place in DataHer Africa Hackathon; Best Technical Implementation in Loveable Hackathon.</div>
+            <div class="news-item">October 2025 – Presented research on Resource-Efficient Deep Learning Architectures for BCDI as a poster at DSN AI Bootcamp 2025.</div>
+            <div class="news-item">October 2025 – Selected as one of 150 participants out of 32,000+ applicants for DSN AI Bootcamp 2025.</div>
+            <div class="news-item">October 2025 – Always in need of compute for research projects; contributions welcome.</div>
+            <div class="news-item">January 2026 – Invited as a guest speaker to 100-level freshers on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group, FUTMINNA.</div>
+            <div class="news-item">January 2026 – Invited as a guest speaker to 300-level students of the School of Electrical Engineering Technology, FUNAAB.</div>
+            <div class="news-item">January 2026 – Officially a Millennium Fellowship Alumna.</div>
+            <div class="news-item">November 2024 – Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
+            <div class="news-item">September 2025 – Presented final RENEU research on BCDI at RENEU Annual Symposium.</div>
+            <div class="news-item">August 2025 – Led first campus-wide MATLAB Competition in Nigeria; 70+ participants from over 10 departments.</div>
+            <div class="news-item">August 2025 – Selected as a Millennium Fellow out of 60,000+ applicants worldwide; engaged in Global Goals Classroom mentoring 100+ high school students aged 10–17.</div>
+            <div class="news-item">June 2025 – Selected as one of 6 undergraduates for RENEU Cohort 3 to collaborate with MIT researchers.</div>
+            <div class="news-item">January 2025 – Delivered a talk on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group Freshers Orientation.</div>
+            <div class="news-item">September 2025 – Joined Technovation Global as Student Ambassador and Mentor.</div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Glory Bagai">
+        </div>
+    </div>
 
 </body>
 </html>
-
