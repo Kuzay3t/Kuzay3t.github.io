@@ -1,210 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glory Bagai - Academic Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory Bagai - Academic Portfolio</title>
+    <meta name="description" content="Academic portfolio of Glory Bagai, Mechatronics Engineering student and AI researcher.">
+    <meta name="author" content="Glory Bagai">
+    <meta name="keywords" content="Glory Bagai, Mechatronics Engineering, Robotics, Artificial Intelligence, Machine Learning, Autonomous Systems, Embedded AI, Resource Efficient AI">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #ffffff;
+            color: #000;
+            line-height: 1.7;
+        }
 
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background-color: #ffffff;
-    color: #222;
-    line-height: 1.7;
-}
+        /* Navigation bar at the top */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 25px 0;
+        }
 
-nav {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 22px 0;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 60px;
+            gap: 45px;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-    gap: 40px;
-}
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #666;
-    font-size: 17px;
-}
+        nav a:hover {
+            color: #000;
+        }
 
-nav a:hover {
-    color: #000;
-}
+        nav a.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+        }
 
-.container {
-    max-width: 1300px;
-    margin: 70px auto;
-    padding: 0 50px;
-    display: grid;
-    grid-template-columns: 2.2fr 1fr;
-    gap: 70px;
-}
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 60px;
+            padding: 0 60px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 100px;
+            align-items: start;
+        }
 
-.content {
-    width: 100%;
-}
+        /* Content section */
+        .content {
+            max-width: 700px;
+        }
 
-h1 {
-    font-size: 44px;
-    font-weight: normal;
-    margin-bottom: 35px;
-    color: #000;
-}
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            color: #000;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
 
-h2 {
-    font-size: 21px;
-    font-weight: normal;
-    margin-top: 50px;
-    margin-bottom: 18px;
-    color: #000;
-}
+        /* Social links - only 4 links */
+        .social-links {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
 
-p {
-    font-size: 17px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
+        .social-links a {
+            color: #8B4513;
+            text-decoration: underline;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-a {
-    color: #7a3e1d;
-    text-decoration: underline;
-}
+        .social-links a:hover {
+            color: #A0522D;
+        }
 
-a:hover {
-    color: #000;
-}
+        /* Paragraphs with justified text */
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            text-align: justify;
+            color: #000;
+        }
 
-.social-links {
-    display: flex;
-    gap: 22px;
-    margin-bottom: 45px;
-}
+        .content a {
+            color: #8B4513;
+            text-decoration: underline;
+        }
 
-.social-links a {
-    font-size: 15px;
-}
+        .content a:hover {
+            color: #A0522D;
+        }
 
-.profile-image {
-    position: sticky;
-    top: 120px;
-}
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            color: #000;
+        }
 
-.profile-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 6px;
-}
+        /* Profile image section */
+        .profile-image {
+            position: sticky;
+            top: 140px;
+        }
 
-.news-item {
-    margin-bottom: 14px;
-    font-size: 16px;
-}
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+        }
 
-@media (max-width: 1000px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+        .news-item {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+            text-align: left;
+        }
 
-    .profile-image {
-        position: relative;
-        margin-top: 30px;
-    }
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                padding: 0 40px;
+                margin-top: 60px;
+            }
 
-    .profile-image img {
-        max-width: 280px;
-    }
-}
-</style>
+            .profile-image {
+                position: relative;
+                top: 0;
+                max-width: 350px;
+                margin: 0 auto;
+                order: -1;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 30px;
+                margin: 40px auto;
+            }
+
+            nav ul {
+                padding: 0 30px;
+                gap: 25px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Top Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </nav>
 
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Publications</a></li>
-<li><a href="#">News</a></li>
-</ul>
-</nav>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <h1>Glory Bagai</h1>
+            
+            <!-- Social Links - Only 4 links like the reference -->
+            <div class="social-links">
+                <a href="mailto:bagaiglory@gmail.com">Email</a>
+                <a href="https://drive.google.com/file/d/1pRoXIr3tHdd2HwDP4F8VsWcaA3103xcv/view?usp=sharing" target="_blank">CV</a>
+                <a href="https://github.com/Kuzay3t" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/glory-bagai" target="_blank">LinkedIn</a>
+            </div>
 
-<div class="container">
+            <!-- About Section -->
+            <p>
+                I am a penultimate-year Mechatronics Engineering undergraduate at the Federal University of Technology, Minna. I am an independent researcher with <a href="https://mlcollective.org" target="_blank">ML Collective</a> and previously a research intern at the <a href="https://www.erricmorejossou.com" target="_blank">Jossou Research Group</a> at <a href="https://mit.edu" target="_blank">MIT – Massachusetts Institute of Technology</a>, mentored by DongHun Ryu, through the <a href="https://reneu.mit.edu" target="_blank">Research Experience for Nigerian Undergraduates (RENEU)</a> program.
+            </p>
 
-<div class="content">
+            <p>
+                My research focuses on the design, control, and learning of autonomous systems under resource constraints. I investigate parameter-efficient fine-tuning, model compression, knowledge distillation, and embedded machine learning to enable compute- and energy-efficient intelligent systems.
+            </p>
 
-<h1>Glory Bagai</h1>
+            <!-- News Section -->
+            <h2 id="news">News</h2>
+            
+            <div class="news-item">February 2026 — I was accepted as a fellow for <a href="https://www.sparkacademy.io" target="_blank">SPARK Academy</a>.</div>
+            
+            <div class="news-item">February 2026 — My work was featured as part of the Millennium Fellowship program.</div>
+            
+            <div class="news-item">January 2026 — I will be spending the summer as a Research Intern at the <a href="https://is.mpg.de" target="_blank">Max Planck Institute for Intelligent Systems</a> working on the project "Structured Fine-Tuning for LLMs" under Joana Silwa, Antonio Orvieto, and Jonas Geiping.</div>
+            
+            <div class="news-item">January 2026 — Won the Dr. Olumide Phillips Scholarship; 5 undergraduate students were selected in the whole of Nigeria.</div>
+            
+            <div class="news-item">January 2026 — Invited as a guest speaker to 100-level freshers on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group, FUTMINNA.</div>
+            
+            <div class="news-item">January 2026 — Officially a Millennium Fellowship Alumna.</div>
+            
+            <div class="news-item">December 2025 — Appointed Pioneer IEEE Women in Engineering Vice-Chair for FUTMINNA Student Branch.</div>
+            
+            <div class="news-item">December 2025 — Became a 7x Hackathon winner – finalist in Fail Forward Hackathon presenting Agrilingua; 1st Place in DataHer Africa Hackathon; Best Technical Implementation in Loveable Hackathon.</div>
+            
+            <div class="news-item">October 2025 — Presented research on Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging as a poster at <a href="https://www.datasciencenigeria.org/dsnaibootcamp2025" target="_blank">DSN AI Bootcamp 2025</a>.</div>
+            
+            <div class="news-item">October 2025 — Selected as one of 150 participants out of 32,000+ applicants for DSN AI Bootcamp 2025.</div>
+            
+            <div class="news-item">October 2025 — Always in need of compute for research projects; contributions welcome.</div>
+            
+            <div class="news-item">September 2025 — Presented final RENEU research on BCDI at RENEU Annual Symposium.</div>
+            
+            <div class="news-item">August 2025 — Selected as a Millennium Fellow out of 60,000+ applicants worldwide; engaged in Global Goals Classroom mentoring 100+ high school students aged 10–17.</div>
+            
+            <div class="news-item">June 2025 — Selected as one of 6 undergraduates for <a href="https://reneu.mit.edu" target="_blank">RENEU Cohort 3</a> to collaborate with MIT researchers.</div>
+            
+            <div class="news-item">June 2025 — Awarded the NNPC–Chevron Joint Venture Undergraduate Scholarship.</div>
+            
+            <div class="news-item">January 2025 — Secured 5th Place at PAADC 8.0 as Technical Lead of Team Enactus FUTMinna, overseeing system architecture and technical implementation.</div>
+            
+            <div class="news-item">January 2025 — Awarded the Petroleum Trust Fund (PTDF) In-Country Scholarship (ISS).</div>
+            
+            <div class="news-item">November 2024 — Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
+            
+            <div class="news-item">November 2024 — Received an Honourable Mention for "Tidiest Interface" at the National MATLAB Competition.</div>
+        </div>
 
-<div class="social-links">
-<a href="mailto:bagaiglory@gmail.com">Email</a>
-<a href="CV_LINK">CV</a>
-<a href="https://github.com/Kuzay3t">GitHub</a>
-<a href="https://www.linkedin.com/in/glory-bagai">LinkedIn</a>
-</div>
-
-<p>
-I am a penultimate-year Mechatronics Engineering undergraduate at the 
-<a href="https://www.futminna.edu.ng/">Federal University of Technology, Minna</a>. 
-I am an independent researcher with 
-<a href="https://mlcollective.org/">ML Collective</a> and previously a participant in the 
-<a href="https://amanlab.mit.edu/reneu">Research Experience for Nigerian Undergraduates (RENEU)</a> program.
-</p>
-
-<p>
-Previously, I worked as a Research Assistant in the 
-<a href="https://jossou.mit.edu/team/">Jossou Research Group</a> at 
-<a href="https://www.mit.edu/">MIT – Massachusetts Institute of Technology</a>, 
-mentored by <a href="https://www.linkedin.com/in/donghun-ryu/">DongHun Ryu</a>. 
-I also presented research at 
-<a href="https://aibootcamp.dsn.ai/">DSN AI Bootcamp 2025 – Data Science Nigeria</a>.
-</p>
-
-<p>
-In 2026, I will join the 
-<a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> 
-as a Research Intern, working on structured fine-tuning methods under 
-<a href="https://jonasgeiping.github.io/">Jonas Geiping</a> and 
-Antonio Orvieto.
-</p>
-
-<p>
-My research focuses on the design, control, and learning of autonomous systems under resource constraints. 
-I investigate parameter-efficient fine-tuning, model compression, knowledge distillation, 
-and embedded machine learning to enable compute- and energy-efficient intelligent systems.
-</p>
-
-<h2>News</h2>
-
-<div class="news-item">
-February 2026 — Featured as part of the Millennium Fellowship program.
-</div>
-
-<div class="news-item">
-January 2026 — Research Internship at Max Planck Institute for Intelligent Systems.
-</div>
-
-<div class="news-item">
-October 2025 — Presented research at DSN AI Bootcamp 2025.
-</div>
-
-</div>
-
-<div class="profile-image">
-<img src="profile.jpg" alt="Glory Bagai">
-</div>
-
-</div>
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Glory Bagai">
+        </div>
+    </div>
 
 </body>
 </html>
