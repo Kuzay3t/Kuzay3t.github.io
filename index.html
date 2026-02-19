@@ -62,18 +62,18 @@
             margin: 100px auto 60px;
             padding: 0 60px;
             display: grid;
-            grid-template-columns: 1fr 350px;
-            gap: 100px;
+            grid-template-columns: 1fr 320px;
+            gap: 120px;
             align-items: start;
         }
 
         /* Content section */
         .content {
-            max-width: 700px;
+            max-width: 650px;
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 46px;
             font-weight: normal;
             margin-bottom: 40px;
             color: #000;
@@ -85,7 +85,7 @@
         .social-links {
             display: flex;
             gap: 30px;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
 
         .social-links a {
@@ -103,7 +103,7 @@
         p {
             font-size: 18px;
             line-height: 1.7;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             text-align: justify;
             color: #000;
         }
@@ -128,12 +128,16 @@
         /* Profile image section */
         .profile-image {
             position: sticky;
-            top: 140px;
+            top: 120px;
+            align-self: start;
+            max-height: 450px;
         }
 
         .profile-image img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            max-height: 450px;
+            object-fit: cover;
             border-radius: 6px;
             display: block;
         }
@@ -143,6 +147,11 @@
             line-height: 1.7;
             margin-bottom: 18px;
             text-align: left;
+        }
+        
+        .news-item strong {
+            color: #B8390E;
+            font-weight: bold;
         }
 
         /* Responsive design */
@@ -157,9 +166,14 @@
             .profile-image {
                 position: relative;
                 top: 0;
-                max-width: 350px;
+                max-width: 320px;
+                max-height: none;
                 margin: 0 auto;
                 order: -1;
+            }
+
+            .profile-image img {
+                max-height: none;
             }
 
             h1 {
@@ -232,43 +246,43 @@
             <!-- News Section -->
             <h2 id="news">News</h2>
             
-            <div class="news-item">February 2026 — I was accepted as a fellow for <a href="https://www.sparkacademy.io" target="_blank">SPARK Academy</a>.</div>
+            <div class="news-item"><strong>February 2026</strong> — I was accepted as a fellow for <a href="https://www.sparkacademy.io" target="_blank">SPARK Academy</a>.</div>
             
-            <div class="news-item">February 2026 — My work was featured as part of the Millennium Fellowship program.</div>
+            <div class="news-item"><strong>February 2026</strong> — My work was featured as part of the Millennium Fellowship program.</div>
             
-            <div class="news-item">January 2026 — I will be spending the summer as a Research Intern at the <a href="https://is.mpg.de" target="_blank">Max Planck Institute for Intelligent Systems</a> working on the project "Structured Fine-Tuning for LLMs" under Joana Silwa, Antonio Orvieto, and Jonas Geiping.</div>
+            <div class="news-item"><strong>January 2026</strong> — I will be spending the summer as a Research Intern at the <a href="https://is.mpg.de" target="_blank">Max Planck Institute for Intelligent Systems</a> working on the project "Structured Fine-Tuning for LLMs" under Joana Silwa, Antonio Orvieto, and Jonas Geiping.</div>
             
-            <div class="news-item">January 2026 — Won the Dr. Olumide Phillips Scholarship; 5 undergraduate students were selected in the whole of Nigeria.</div>
+            <div class="news-item"><strong>January 2026</strong> — Won the Dr. Olumide Phillips Scholarship; 5 undergraduate students were selected in the whole of Nigeria.</div>
             
-            <div class="news-item">January 2026 — Invited as a guest speaker to 100-level freshers on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group, FUTMINNA.</div>
+            <div class="news-item"><strong>January 2026</strong> — Invited as a guest speaker to 100-level freshers on "The Excellence Shift: How Top Students Win on Campus" at Brainstorm Group, FUTMINNA.</div>
             
-            <div class="news-item">January 2026 — Officially a Millennium Fellowship Alumna.</div>
+            <div class="news-item"><strong>January 2026</strong> — Officially a Millennium Fellowship Alumna.</div>
             
-            <div class="news-item">December 2025 — Appointed Pioneer IEEE Women in Engineering Vice-Chair for FUTMINNA Student Branch.</div>
+            <div class="news-item"><strong>December 2025</strong> — Appointed Pioneer IEEE Women in Engineering Vice-Chair for FUTMINNA Student Branch.</div>
             
-            <div class="news-item">December 2025 — Became a 7x Hackathon winner – finalist in Fail Forward Hackathon presenting Agrilingua; 1st Place in DataHer Africa Hackathon; Best Technical Implementation in Loveable Hackathon.</div>
+            <div class="news-item"><strong>December 2025</strong> — Became a 7x Hackathon winner – finalist in Fail Forward Hackathon presenting Agrilingua; 1st Place in DataHer Africa Hackathon; Best Technical Implementation in Loveable Hackathon.</div>
             
-            <div class="news-item">October 2025 — Presented research on Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging as a poster at <a href="https://www.datasciencenigeria.org/dsnaibootcamp2025" target="_blank">DSN AI Bootcamp 2025</a>.</div>
+            <div class="news-item"><strong>October 2025</strong> — Presented research on Resource-Efficient Deep Learning Architectures for Rapid and Accurate Reconstruction of Bragg Coherent Diffraction Imaging as a poster at <a href="https://www.datasciencenigeria.org/dsnaibootcamp2025" target="_blank">DSN AI Bootcamp 2025</a>.</div>
             
-            <div class="news-item">October 2025 — Selected as one of 150 participants out of 32,000+ applicants for DSN AI Bootcamp 2025.</div>
+            <div class="news-item"><strong>October 2025</strong> — Selected as one of 150 participants out of 32,000+ applicants for DSN AI Bootcamp 2025.</div>
             
-            <div class="news-item">October 2025 — Always in need of compute for research projects; contributions welcome.</div>
+            <div class="news-item"><strong>October 2025</strong> — Always in need of compute for research projects; contributions welcome.</div>
             
-            <div class="news-item">September 2025 — Presented final RENEU research on BCDI at RENEU Annual Symposium.</div>
+            <div class="news-item"><strong>September 2025</strong> — Presented final RENEU research on BCDI at RENEU Annual Symposium.</div>
             
-            <div class="news-item">August 2025 — Selected as a Millennium Fellow out of 60,000+ applicants worldwide; engaged in Global Goals Classroom mentoring 100+ high school students aged 10–17.</div>
+            <div class="news-item"><strong>August 2025</strong> — Selected as a Millennium Fellow out of 60,000+ applicants worldwide; engaged in Global Goals Classroom mentoring 100+ high school students aged 10–17.</div>
             
-            <div class="news-item">June 2025 — Selected as one of 6 undergraduates for <a href="https://reneu.mit.edu" target="_blank">RENEU Cohort 3</a> to collaborate with MIT researchers.</div>
+            <div class="news-item"><strong>June 2025</strong> — Selected as one of 6 undergraduates for <a href="https://reneu.mit.edu" target="_blank">RENEU Cohort 3</a> to collaborate with MIT researchers.</div>
             
-            <div class="news-item">June 2025 — Awarded the NNPC–Chevron Joint Venture Undergraduate Scholarship.</div>
+            <div class="news-item"><strong>June 2025</strong> — Awarded the NNPC–Chevron Joint Venture Undergraduate Scholarship.</div>
             
-            <div class="news-item">January 2025 — Secured 5th Place at PAADC 8.0 as Technical Lead of Team Enactus FUTMinna, overseeing system architecture and technical implementation.</div>
+            <div class="news-item"><strong>January 2025</strong> — Secured 5th Place at PAADC 8.0 as Technical Lead of Team Enactus FUTMinna, overseeing system architecture and technical implementation.</div>
             
-            <div class="news-item">January 2025 — Awarded the Petroleum Trust Fund (PTDF) In-Country Scholarship (ISS).</div>
+            <div class="news-item"><strong>January 2025</strong> — Awarded the Petroleum Trust Fund (PTDF) In-Country Scholarship (ISS).</div>
             
-            <div class="news-item">November 2024 — Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
+            <div class="news-item"><strong>November 2024</strong> — Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
             
-            <div class="news-item">November 2024 — Received an Honourable Mention for "Tidiest Interface" at the National MATLAB Competition.</div>
+            <div class="news-item"><strong>November 2024</strong> — Received an Honourable Mention for "Tidiest Interface" at the National MATLAB Competition.</div>
         </div>
 
         <!-- Profile Image -->
