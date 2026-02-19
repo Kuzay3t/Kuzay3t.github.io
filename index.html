@@ -154,6 +154,17 @@
             font-weight: bold;
         }
 
+        /* News section - outside grid */
+        .news-section {
+            max-width: 1200px;
+            margin: 80px auto 60px;
+            padding: 0 60px;
+        }
+
+        .news-content {
+            max-width: 650px;
+        }
+
         /* Responsive design */
         @media (max-width: 1024px) {
             .container {
@@ -178,6 +189,10 @@
 
             h1 {
                 font-size: 40px;
+            }
+
+            .news-section {
+                padding: 0 40px;
             }
         }
 
@@ -207,6 +222,11 @@
             .social-links {
                 flex-wrap: wrap;
                 gap: 20px;
+            }
+
+            .news-section {
+                padding: 0 30px;
+                margin: 60px auto 40px;
             }
         }
     </style>
@@ -242,7 +262,17 @@
             <p>
                 My research focuses on the design, control, and learning of autonomous systems under resource constraints. I investigate parameter-efficient fine-tuning, model compression, knowledge distillation, and embedded machine learning to enable compute- and energy-efficient intelligent systems.
             </p>
+        </div>
 
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Glory Bagai">
+        </div>
+    </div>
+
+    <!-- News Section - Outside grid container -->
+    <div class="news-section">
+        <div class="news-content">
             <!-- News Section -->
             <h2 id="news">News</h2>
             
@@ -283,11 +313,6 @@
             <div class="news-item"><strong>November 2024</strong> — Appointed Community Lead, FUTMINNA MATLAB Space; previously served as Social Media Lead.</div>
             
             <div class="news-item"><strong>November 2024</strong> — Received an Honourable Mention for "Tidiest Interface" at the National MATLAB Competition.</div>
-        </div>
-
-        <!-- Profile Image -->
-        <div class="profile-image">
-            <img src="profile.jpg" alt="Glory Bagai">
         </div>
     </div>
 
